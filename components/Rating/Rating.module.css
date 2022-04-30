@@ -1,6 +1,7 @@
 .star svg {
 	margin-right: 5px;
 }
+
 .star {
 	display: inline-block;
 }
@@ -21,6 +22,7 @@
 	position: absolute;
 	bottom: -15px;
 	left: 0;
+
 	color: var(--red);
 }
 

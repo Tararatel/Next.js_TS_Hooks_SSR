@@ -1,10 +1,11 @@
 .reviewForm {
+	display: grid;
+	align-items: center;
+
 	font-size: 14px;
 	line-height: 24px;
-	display: grid;
 	grid-template-columns: [start] auto 1fr auto [end];
 	gap: 20px 30px;
-	align-items: center;
 }
 
 .description {
@@ -30,10 +31,12 @@
 }
 
 .panel {
-	padding: 20px;
 	position: relative;
-	border-radius: 5px;
+
 	margin-top: 20px;
+	padding: 20px;
+
+	border-radius: 5px;
 }
 
 .success {
@@ -56,6 +59,7 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
+
 	cursor: pointer;
 }
 
