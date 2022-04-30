@@ -9,8 +9,12 @@ import { ProductModel } from '../../interfaces/product.interface';
 import { withLayout } from '../../layout/Layout';
 import { TopPageComponent } from '../../page-components';
 import Head from 'next/head';
+import { Error404 } from '../404';
 
 function TopPage({ firstCategory, page, products }: TopPageProps): JSX.Element {
+	if (!page || !products) {
+		return <Error404 />;
+	}
 	return (
 		<>
 			<Head>
@@ -38,7 +42,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 	return {
 		paths,
-		fallback: true,
+		fallback: false,
 	};
 };
 

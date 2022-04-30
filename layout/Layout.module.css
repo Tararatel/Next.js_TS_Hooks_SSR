@@ -7,9 +7,9 @@
 	gap: 40px 30px;
 	/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
 	grid-template-areas:
-		'. header header .'
-		'. sidebar body .'
-		'footer footer footer footer';
+		". header header ."
+		". sidebar body ."
+		"footer footer footer footer";
 }
 
 .header {
@@ -52,9 +52,9 @@
 	.wrapper {
 		grid-template-columns: minmax(320px, 1fr);
 		grid-template-areas:
-			'header'
-			'body'
-			'footer';
+			"header"
+			"body"
+			"footer";
 		gap: 10px;
 	}
 

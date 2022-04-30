@@ -1,42 +1,15 @@
 import axios from 'axios';
 import { GetStaticProps } from 'next';
 import { useEffect, useState } from 'react';
-import { Button, Htag, P, Rating, Tag, Input, Textarea, Search } from '../components';
 import { API } from '../helpers/api';
 import { MenuItem } from '../interfaces/menu.interface';
 import { withLayout } from '../layout/Layout';
+import { Error404 } from './404';
 
 function Home({ menu }: HomeProps): JSX.Element {
 	const [rating, setRating] = useState<number>(4);
 
-	return (
-		<>
-			<Htag tag="h3">ololo</Htag>
-			<Button appearance="primary" arrow="right">
-				Button
-			</Button>
-			<Button appearance="ghost" arrow="down">
-				Button
-			</Button>
-			<P size="small">ololololo</P>
-			<P size="medium">ololololo</P>
-			<P size="large">ololololo</P>
-			<Tag size="small">ololololo</Tag>
-			<Tag size="small" color="red">
-				ololololo
-			</Tag>
-			<Tag size="medium" color="green">
-				ololololo
-			</Tag>
-			<Tag size="medium" color="primary">
-				ololololo
-			</Tag>
-			<Rating rating={rating} isEditable setRating={setRating} />
-			<Input placeholder="тест" />
-			<Textarea placeholder="тест" />
-			<Search />
-		</>
-	);
+	return <Error404 />;
 }
 
 export default withLayout(Home);

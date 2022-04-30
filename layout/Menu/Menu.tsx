@@ -85,7 +85,7 @@ export const Menu = (): JSX.Element => {
 						<div key={m._id.secondCategory}>
 							<div
 								tabIndex={0}
-								onKeyDown={(key: KeyboardEvent) => openSecondLevelKey(key, m._id.secondCategory)}
+								onKeyDown={(key: any) => openSecondLevelKey(key, m._id.secondCategory)}
 								className={styles.secondLevel}
 								onClick={() => openSecondLevel(m._id.secondCategory)}
 							>

@@ -11,7 +11,7 @@ export const Search = ({ className, ...props }: SearchProps): JSX.Element => {
 	const [search, setSearch] = useState<string>('');
 	const router = useRouter();
 
-	const handleKeyDown = (e: KeyboardEvent) => {
+	const handleKeyDown = (e: any) => {
 		if (e.key == 'Enter') {
 			goToSearch();
 		}
