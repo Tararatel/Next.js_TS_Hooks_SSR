@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "husky install",
     "dev": "next dev",
     "export": "next export",
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
@@ -33,7 +32,6 @@
     "eslint": "^8.13.0",
     "eslint-config-next": "12.1.4",
     "eslint-plugin-react-hooks": "^4.4.0",
-    "husky": "^7.0.4",
     "stylelint": "^14.6.1",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0",
